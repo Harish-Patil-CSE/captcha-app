@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAPTCHA Verification</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Enter the CAPTCHA</h2>
+
+      <div class="captcha-box">
+        <div id="captcha-img"></div>
+        <button id="refresh-btn">↻</button>
+      </div>
+
+      <form method="POST" action="/verify">
+        <input
+          type="text"
+          name="captcha"
+          placeholder="Enter CAPTCHA"
+          required
+        />
+        <button type="submit">Verify</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
